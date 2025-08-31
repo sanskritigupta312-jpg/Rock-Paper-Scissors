@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+/* 
+body {
+    background: linear-gradient(135deg, #f8fafc 0%, #a7c7e7 100%);
+    min-height: 100vh;
+    margin: 0;
+} */
+
+ body {
+    background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+    min-height: 100vh;
+    margin: 0;
+} 
+/* 
+body {
+    background: linear-gradient(120deg, #bb88eb 0%, #bedaf7 100%);
+    min-height: 100vh;
+    margin: 0;
+} */
+
+h1{
+    background-color: black;
+    color: whitesmoke;
+    height: 4rem;
+    line-height: 4rem;
+}
+
+
+.choices {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.choice{
+    height: 150px;
+    width: 200px;
+    gap: 2rem;
+    border-radius: 50%;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+
+
+img:hover {
+    cursor: pointer;
+    border: 6px solid black;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 5rem;
+}
+
+#user-score, #comp-score {
+    font-size: 4rem;
+}
+
+.msg {
+    margin-top: 4rem;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.new-game {
+    margin-top: 2rem;
+    background-color: rgb(2, 5, 32);
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+}
+
+.new-game:hover {
+    cursor: pointer;
+    border: 4px solid white;
+}
+
+
+@media (max-width: 600px){
+    h1{
+        font-size: 1.5rem;
+        height: 3rem;
+        line-height: 3rem;
+    }
+}
+
+
+@media (max-width: 450px){
+    h1{
+        font-size: 1.2rem;
+        height: 3rem;
+        line-height: 3rem;
+    }
+
+    .choice {
+        height: 100px;
+        width: 150px;
+        gap: 1rem;;
+    }
+
+    img{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+
+@media (max-width: 350px){
+    h1{
+        font-size: 0.9rem;
+        height: 3rem;
+        line-height: 3rem;
+    }
+
+    .msg {
+        font-size: 1.2rem;
+    }
+
+    .new-game{
+        font-size: 1.2rem;
+    }
+}
+
+
